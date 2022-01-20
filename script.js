@@ -45,7 +45,7 @@ let valueY = 0
 function bestScoresToDOM() {
   bestScores.forEach((bestScore, index) => {
     const bestScoreEl = bestScore
-    bestScoreEl.textContent = `${bestScoreArray[index].bestScore}s`
+    bestScoreEl.textContent = `${bestScoreArray[index].bestScore}s`;
   })
 }
 
@@ -59,8 +59,8 @@ function getSavedBestScores() {
       { questions: 25, bestScore: finalTimeDisplay },
       { questions: 50, bestScore: finalTimeDisplay },
       { questions: 99, bestScore: finalTimeDisplay },
-    ]
-    localStorage.setItem('bestScores', JSON.stringify(bestScoreArray))
+    ];
+    localStorage.setItem('bestScores', JSON.stringify(bestScoreArray));
   }
   bestScoresToDOM()
 }
