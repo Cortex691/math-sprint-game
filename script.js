@@ -52,7 +52,7 @@ function bestScoresToDOM() {
 // Check Local Storage for Best Stores, set bestScoreArray
 function getSavedBestScores() {
   if (localStorage.getItem('bestScores')) {
-    bestScoreArray - JSON.parse(localStorage.bestScores)
+    bestScoreArray = JSON.parse(localStorage.bestScores)
   } else {
     bestScoreArray = [
       { questions: 10, bestScore: finalTimeDisplay },
